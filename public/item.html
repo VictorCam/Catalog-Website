@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<title>Catalog</title>
+		<link rel="stylesheet" href="item.css">
+		<script src="item.js" charset="utf-8" defer></script>
+
+	</head>
+
+	<body>
+		<header class="catalog-header">
+			<h1 class="web-name">Catalog</h1>
+		</header>
+		<main class="item-page">
+			<div class="item-info">
+				<div class="general-info">
+					<h1 class="item-name">Item Name</h1>
+					<p class="sold-by item-font">By [USER]</p>
+					<p class="item-quantity item-font">QUANTITY LEFT:#</p>
+				</div>
+
+				<div class="purch-info">
+					<p class="item-price">Price: #</p>
+					<button type="button" id="purchase-button" class="button">Purchase</button>
+					<div class="quantity-purch">
+						<textarea id="pick-quantity">1</textarea>
+						<div id="quantity-buttons">
+							<button type="button" id="arrow-up" class="quantity-arrow">UP</button>
+							<button type="button" id="arrow-down" class="quantity-arrow">DOWN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='trans-container'>
+				<div class="purchase-trans">
+					<p class="user-trans trans-info">[User]</p>
+					<p class="quantity-trans trans-info">Quantity: #</p>
+				</div>
+				<div class="purchase-trans">
+					<p class="user-trans trans-info">[User]</p>
+					<p class="quantity-trans trans-info">Quantity: #</p>
+				</div>
+				<div class="purchase-trans">
+					<p class="user-trans trans-info">[User]</p>
+					<p class="quantity-trans trans-info">Quantity: #</p>
+				</div>
+				<div class="purchase-trans">
+					<p class="user-trans trans-info">[User]</p>
+					<p class="quantity-trans trans-info">Quantity: #</p>
+				</div>
+			</div>
+		</main>
+		<div id="verify-modal-backdrop" class="hidden"></div>
+		<div id="verify-purchase-modal" class="hidden">
+			<h1 class="verify-header">Verify Your Purchase</h1>
+			
+			<div class="verify-username verify-body">
+				<p class="textarea-title">Username</p>
+				<textarea id="verify-username-input" class="textarea-box"></textarea>
+			</div>
+
+			<div class="verify-password verify-body">
+				<p class="textarea-title">Password</p>
+				<textarea id="verify-password-input" class="textarea-box"></textarea>
+			</div>
+
+			<div class="verify-footer">
+				<button type="button" class="cancel-verify button-verify button">Cancel</button>
+				<button type="button" class="submit-verify button-verify button">Submit</button>
+			</div>
+		</div>
+	</body>
+
+</html>

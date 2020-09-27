@@ -1,0 +1,398 @@
+/*
+# is for id's
+. is for classes
+elements is nothing
+pixels to em: http://pxtoem.com/
+*/
+
+body /*set body of margin and padding to 0 for whole page*/
+{
+  margin: 0;
+  padding: 0;
+}
+
+header /*black header*/
+{
+  background-color: black;
+}
+
+.header-title-c /*the title of the page*/
+{
+  color: white;
+  margin: 0em;
+  padding: 0.3em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.125em;
+  display: inline-block;
+}
+
+#container-title {
+	margin-left: 45px;
+	font-size: 48px;
+	margin-bottom: 14px;
+}
+
+.title-type-button{
+	font-size: 27px;
+	margin-right: 12px;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	border-radius: 15px;
+	margin-top: 6px;
+	outline: none;
+}
+
+.item-c /*first div that encapculates all the content*/
+{
+  background-color: #f3f4e6;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  height: 3em;
+  width: 6.5em;
+  padding: 5em;
+  margin: 1.250em;
+  border: 0.1em solid gray;
+}
+
+.content-c
+{
+  position: relative;
+  top: -50px;
+}
+
+.name-c /*bold item and the name*/
+{
+  font-weight: bold;
+}
+
+.button-item-type {
+	display: inline-block;
+	position: absolute;
+	right: 226px;
+	top: 22px;
+}
+
+.type-choice {
+	color: white;
+	font-size: 35px;
+	padding: 4px 25px 4px 0px;
+}
+
+.sell-c /*sell button*/
+{
+  background-color: black;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+
+  position:absolute;
+  right: 30px;
+  top: 5px;
+  overflow: hidden;
+  padding: 0.5em 2.4em;
+  margin: 0.5em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sell-c:hover /*sell button hover*/
+{
+  background-color: #4CAF50;
+  color: black;
+  border: 1px solid black;
+
+  position:absolute;
+  right: 30px;
+  top: 5px;
+  overflow: hidden;
+  padding: 0.5em 2.4em;
+  margin: 0.5em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-c /*button for creating account hover*/
+{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+
+  position:absolute;
+  right: 30px;
+  top: 45px;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-c:hover /*button for creating account*/
+{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+
+  position:absolute;
+  right: 30px;
+  top: 45px;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.purchase-c /*button for purchasing*/
+{
+  background-color: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.purchase-c:hover /*button for purchasing hover*/
+{
+  background-color: #4CAF50;
+  color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hidden /*hides elements*/
+{
+  display: none;
+}
+
+#modal-backdrop /*backdrop for background*/
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.7;
+}
+
+
+/*FIRST MODAL FOR SELLING AN ITEM*/
+/***************************************************/
+/***************************************************/
+#modal-sell
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: auto;
+  max-width: 600px;
+  min-width: 450px;
+  min-height: 300px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 50px 0px 50px;
+}
+
+.modal-header
+{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#modal-sell
+{
+  text-align: center;
+}
+
+.modal-dialog
+{
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.name-input-i, .price-input-i
+{
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  width: 50%;
+}
+
+.sell-buttons-c
+{
+  padding: 25px;
+}
+
+.cancel-c /*button for canceling*/
+{
+  background-color: white;
+  color: #af4c4c;
+  border: 1px solid #af4c4c;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-c:hover /*button for canceling hover*/
+{
+  background-color: #af4c4c;
+  color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-post-c /*button for canceling*/
+{
+  background-color: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-post-c:hover /*button for canceling hover*/
+{
+  background-color: #4CAF50;
+  color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-c
+{
+  padding: 10px;
+}
+/***************************************************/
+/***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECOND MODAL FOR CREATING AN ACCOUNT*/
+/***************************************************/
+/***************************************************/
+#modal-account
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: auto;
+  max-width: 600px;
+  min-width: 450px;
+  min-height: 300px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 50px 0px 50px;
+}
+
+#modal-account
+{
+  text-align: center;
+}
+
+.modal-dialog
+{
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+
+.sell-buttons-c
+{
+  padding: 25px;
+}
+
+.cancel-account-c /*button for canceling*/
+{
+  background-color: white;
+  color: #af4c4c;
+  border: 1px solid #af4c4c;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-account-c:hover /*button for canceling hover*/
+{
+  background-color: #af4c4c;
+  color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-account-c /*button for canceling*/
+{
+  background-color: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-account-c:hover /*button for canceling hover*/
+{
+  background-color: #4CAF50;
+  color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-c
+{
+  padding: 10px;
+}
+/***************************************************/
+/***************************************************/

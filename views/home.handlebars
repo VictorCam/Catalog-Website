@@ -1,0 +1,35 @@
+<body>
+
+	{{> header}}
+
+
+	<main>
+		<h1 id="container-title">{{cTitle}}</h1>
+		<div id="container-i" class="container-c">
+			{{#if regular}}
+				{{#each users}}
+					{{> soldItem price=this.rPrice itemName=this.rName link=this.rID location="regular"}}
+				{{/each}}
+			{{else if limited}}
+				{{#each users}}
+					{{> soldItem price=this.limPrice itemName=this.limName link=this.limID location="limited"}}
+				{{/each}}
+			{{else}}
+				{{#each users}}
+					{{> soldItem price=this.sPrice itemName=this.sName link=this.sID location="special"}}
+				{{/each}}
+			{{/if}}
+		</div>
+	</main>
+
+	<div id="modal-backdrop" class="hidden"></div>
+	<div id="modal-sell" class="hidden">
+
+		{{> sellVerify}}
+
+	</div>
+	<div id="modal-account" class="hidden">
+		{{> makeAccount}}
+
+	</div>
+</body>

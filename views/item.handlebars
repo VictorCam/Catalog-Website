@@ -1,0 +1,65 @@
+<body>
+
+	{{> header}}
+
+	<main class="item-page">
+		<div class="item-info">
+			<div class="general-info">
+				<h1 class="item-name">Item: {{this.rName}}</h1>
+				<p class="sold-by item-font">By {{this.creator}}</p>
+				<p class="item-quantity item-font">QUANTITY LEFT: {{this.quantity}}</p>
+			</div>
+
+			<div class="purch-info">
+				<p class="item-price">Price: {{this.rPrice}}</p>
+				<button type="button" id="purchase-button" class="button">Purchase</button>
+				<div class="quantity-purch">
+					<textarea id="pick-quantity">1</textarea>
+					<div id="quantity-buttons">
+						<button type="button" id="arrow-up" class="quantity-arrow">UP</button>
+						<button type="button" id="arrow-down" class="quantity-arrow">DOWN</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='trans-container'>
+			{{#each transcript}}
+				{{> trans username=this.UserName purchases=this.purchaseNum}}
+			{{/each}}
+		</div>
+	</main>
+
+	<div id="verify-modal-backdrop" class="hidden"></div>
+	<div id="verify-purchase-modal" class="hidden">
+		<h1 class="verify-header">Verify Your Purchase</h1>
+
+		<div class="verify-username verify-body">
+			<p class="textarea-title">Username</p>
+			<textarea id="verify-username-input" class="textarea-box"></textarea>
+		</div>
+
+		<div class="verify-password verify-body">
+			<p class="textarea-title">Password</p>
+			<textarea id="verify-password-input" class="textarea-box"></textarea>
+		</div>
+
+		<div class="verify-footer">
+			<button type="button" class="cancel-verify button-verify button">Cancel</button>
+			<button type="button" class="submit-verify button-verify button">Submit</button>
+		</div>
+	</div>
+
+	<div id="modal-backdrop" class="hidden"></div>
+	<div id="modal-sell" class="hidden">
+
+		{{> sellVerify}}
+
+	</div>
+
+	<div id="modal-account" class="hidden">
+
+		{{> makeAccount}}
+
+	</div>
+</body>

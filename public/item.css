@@ -1,0 +1,188 @@
+.web-name {
+	background-color: black;
+	color: white;
+	font-size: 468%;
+	font-weight: normal;
+	margin-top: 0%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	margin-bottom: 0%;
+}
+
+body
+{
+	  font-family: "Montserrat", sans-serif;
+}
+
+.item-info {
+	display: flex;
+	margin-left: 17%;
+}
+
+.general-info {
+	width: 46%;
+	flex-wrap: wrap;
+}
+
+.item-name {
+	font-weight: bold;
+	font-size: 440%;
+	margin-bottom: 5%;
+	margin-top: 45px;
+}
+
+.sold-by {
+	margin-right: 5%;
+}
+
+.item-price {
+	font-size: 287%;
+	padding-left: 23%;
+	margin-top: 45px;
+	margin-bottom: 7%;
+}
+
+#purchase-button {
+	background-color: #aacc9f;
+	color: white;
+	border-style: hidden;
+	border-radius: 8px;
+	font-size: 300%;
+	padding-left: 14px;
+	padding-right: 14px;
+	float: left;
+}
+
+#purchase-button:hover {
+	background-color: lightgreen;
+	color: white;
+	border-style: hidden;
+	border-radius: 8px;
+	font-size: 300%;
+	padding-left: 14px;
+	padding-right: 14px;
+	float: left;
+}
+
+.quantity-purch {
+	display: inline-block;
+	margin-left: 26px;
+	margin-top: 18px;
+}
+
+#pick-quantity {
+	resize: none;
+}
+
+.item-font {
+	font-size: 186%;
+	float: left;
+	margin-top: 0%;
+}
+
+.quantity-buttons {
+	margin-left: 10px;
+}
+
+.quantity-arrow {
+	width: 45%;
+	font-weight: bold;
+}
+
+#arrow-down {
+}
+
+.purchase-trans {
+	display: flex;
+	margin-top: 25px;
+	background-color: #e3e3e3;
+}
+
+.user-trans {
+	margin-left: 15%;
+}
+
+.trans-info {
+	font-size: 229%;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+
+.quantity-trans {
+	position: absolute;
+	left: 71%;
+}
+
+.hidden {
+	display: none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+#verify-modal-backdrop {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.50);
+}
+
+#verify-purchase-modal {
+	position: fixed;
+	top: 19%;
+	bottom: 38%;
+	left: 15%;
+	right: 15%;
+	z-index: 1023;
+	background-color: white;
+	min-height: 311px;
+	min-width: auto;
+	text-align: center;
+}
+
+.verify-header {
+	font-size: 327%;
+	margin-top: 1px;
+	margin-bottom: 0px;
+}
+
+.textarea-title {
+	font-size: 201%;
+	margin-top: 1%;
+	margin-bottom: 0%;
+	font-weight: 500;
+}
+
+.textarea-box {
+	background-color: lightgrey;
+	width: 83%;
+	resize: none;
+	border-color: grey;
+	font-weight: bold;
+}
+
+.cancel-verify {
+	left: 27%;
+	position: absolute;
+}
+
+.submit-verify {
+	position: absolute;
+	right: 29%;
+}
+
+.button-verify {
+	padding: 1% 2% 1% 2%;
+	background-color: black;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	font-size: 214%;
+	margin-top: 1.5%;
+}

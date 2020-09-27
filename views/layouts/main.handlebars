@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="/home.css">
+	<link rel="stylesheet" href="/item.css">
+	<script src="/home.js" charset="utf-8" defer></script>
+	<script src="/item.js" charset="utf-8" defer></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js"></script>
+
+	{{#each scripts}}
+	<script src="{{file_name}}" charset="utf-8" defer></script>
+	{{/each}}
+
+</head>
+
+<html lang="en" dir="ltr">
+
+{{{body}}}
+
+</html>
