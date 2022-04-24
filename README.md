@@ -1,6 +1,6 @@
 # Catalog Website
 
-For more details please checkout the project "Project_Report.pdf" in the root directory.
+For more details please checkout the project "Project_Report.pdf" and "Project_Details.pdf" in the root directory.
 
 ## Introduction
 
