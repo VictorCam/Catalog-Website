@@ -1,4 +1,6 @@
-# Cs340_Final
+# Catalog Website
+
+For more details please checkout the project "Project_Report.pdf" in the root directory.
 
 ## Introduction
 
@@ -18,3 +20,5 @@ The website purchases the items and then sells it to the users so there buyers a
 won't need to communicate.
 There will be 3 lists that the user can look through to purchase an item, the list will either
 be regular, limited, or special.
+
+Contributers - Tobias Bird, Victor Campa, and Cooper Johnk
